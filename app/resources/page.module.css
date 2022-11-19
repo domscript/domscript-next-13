@@ -12,28 +12,21 @@
   align-items: center;
 }
 
-.footer ul,
-.footer li {
-  list-style-type: none;
-  padding: 0;
-}
-
 .footer {
   display: flex;
-  flex-direction: row;
+  flex: 1;
   padding: 2rem 0;
-  margin: 0 auto;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
 }
 
-/* .footer a {
+.footer a {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-} */
+}
 
 .title {
   margin: 0;

@@ -1,0 +1,28 @@
+.footer ul,
+.footer li {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer {
+  color: #374151;
+}
+.footer svg {
+  fill: #374151;
+}
+
+/* .footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+} */
+
+@media (prefers-color-scheme: dark) {
+  .footer {
+    color: #fff;
+  }
+  .footer svg {
+    fill: #fff;
+  }
+}

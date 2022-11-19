@@ -1,8 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./page.module.css";
 
-export default function Home() {
+export default function Resources() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
@@ -20,14 +19,6 @@ export default function Home() {
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js 13</p>
           </a>
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Explore the Next.js 13 playground.</p>
-          </a>
-          <Link href="./resources">Resources</Link>\{" "}
         </div>
       </main>
     </div>
