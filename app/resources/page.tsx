@@ -1,25 +1,34 @@
-import Image from "next/image";
+import Icon from "../Icon";
 import styles from "./page.module.css";
+import Link from "next/link";
+import { resourceSections } from "@/utils/resourceSections";
 
 export default function Resources() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js 13!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://beta.nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js 13</p>
-          </a>
-        </div>
+        <ul className={styles.grid}>
+          {resourceSections.map((el, i) => (
+            <li key={el.title.toLowerCase()} className={styles.card}>
+              <Link href={`/resources#section__${i}`}>
+                <Icon
+                  viewBox="0 0 450 450"
+                  color={""}
+                  path={el.path}
+                  width={30}
+                  height={30}
+                  className={""}
+                />
+                <p>{el.title.toUpperCase()}</p>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        {resourceSections.map((el, i) => (
+          <section id={`section__${i}`} key={`section__${el.title}`}>
+            <p>{el.title}</p>
+          </section>
+        ))}
       </main>
     </div>
   );
