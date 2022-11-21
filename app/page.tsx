@@ -27,7 +27,14 @@ export default function Home() {
             <h2>Examples &rarr;</h2>
             <p>Explore the Next.js 13 playground.</p>
           </a>
-          <Link href="./resources">Resources</Link>\{" "}
+          <Link href="./resources" className={styles.card}>
+            <h2>Resources &rarr;</h2>
+            <p>
+              Explore . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+              . .
+            </p>
+            <p></p>
+          </Link>
         </div>
       </main>
     </div>

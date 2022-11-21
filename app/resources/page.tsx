@@ -2,8 +2,10 @@ import Icon from "../Icon";
 import styles from "./page.module.css";
 import Link from "next/link";
 import { resourceSections } from "@/utils/resourceSections";
+import { Resources } from "@/utils/resourcesObject";
 
-export default function Resources() {
+export default function ResourcesPage() {
+  // console.log(Resources);
   return (
     <div className={styles.container}>
       <main className={styles.main}>
@@ -19,7 +21,7 @@ export default function Resources() {
                   height={30}
                   className={""}
                 />
-                <p>{el.title.toUpperCase()}</p>
+                <p className="whitespace-nowrap">{el.title.toUpperCase()}</p>
               </Link>
             </li>
           ))}
