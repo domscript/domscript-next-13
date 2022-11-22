@@ -31,6 +31,9 @@ export default function ResourcesPage() {
             <p>{el.title}</p>
           </section>
         ))}
+        <Link href="/" className="my-40">
+          Back to Home
+        </Link>{" "}
       </main>
     </div>
   );
