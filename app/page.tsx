@@ -33,7 +33,13 @@ export default function Home() {
               Explore . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
               . .
             </p>
-            <p></p>
+          </Link>
+          <Link href="./newcomersinfo" className={styles.card}>
+            <h2>NewcomersInfo &rarr;</h2>
+            <p>
+              Explore . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+              . .
+            </p>
           </Link>
         </div>
       </main>
